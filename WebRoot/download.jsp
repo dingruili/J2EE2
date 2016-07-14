@@ -5,6 +5,7 @@
 <%@page import="java.net.URLEncoder"%>
 <%@page import="java.io.OutputStream"%>
 <%@page import="java.io.FileInputStream"%>
+
  <%
       //关于文件下载时采用文件流输出的方式处理：
       //加上response.reset()，并且所有的％>后面不要换行，包括最后一个；

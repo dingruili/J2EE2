@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <header>
-    <!-- 修改了导航栏    肖雪晴 -->
+    <!-- 修改了导航栏   肖雪晴 -->
 	    <div class="logo"><i class="fa fa-youtube-play"></i><a href="index.jsp">DownLoadV</a></div>
 	    <div class="containered">
 					<div style="float: left;margin-left:500px; position: relative; top:20px; height: 40px;">
@@ -107,6 +107,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
 </nav>
 
+=======
+    </header>
+>>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
     <main class="container-fluid">
     	<div class="rpw">
     		<div class="col-md-12">

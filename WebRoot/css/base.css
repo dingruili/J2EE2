@@ -1,0 +1,75 @@
+body {}
+.header, .footer { padding-left: 15px;  padding-right: 15px; }
+.header {  border-bottom: 1px solid #e5e5e5;  }
+.container{ padding: 0;}
+
+.container { max-width: 950px; }
+
+.header, .footer { padding-left: 0;  padding-right: 0;}
+.header { margin-bottom: 30px; }
+
+.a{
+	color: white;
+	text-decoration:none;
+}
+.a:focus,
+.a:hover {
+	color: white;
+}
+.account{
+	
+	padding-right:200px;
+	text-align:right;
+	line-height: 40px;
+	color:white;
+	height:40px;
+	background:#303a40;
+	
+}
+.account>a{
+	float:right;
+	padding-right:50px;
+	line-height: 40px;
+	color:white;
+	
+}
+.header{background-color: #303a40;position: relative;z-index: 100;}
+.header .logo a{font-size: 26px; color: #fff; cursor: pointer; text-decoration:none;}
+.header .wrap {width: 950px; margin: 0 auto;}
+.header .wrap .logo {float: left;padding: 7px 20px 5px 0;position: relative;}
+.header .wrap .nav {float: left;line-height: 50px;}
+.header .wrap .nav ul li {float: left;list-style-type:none;}
+.header .wrap .nav ul li a{display: block; color: #ccc; padding: 0 20px;text-decoration: none;font-size: 14px;}
+.header .wrap .nav ul li.active a{color: #fff; font-weight: bold; background-color: #3689b3;}
+.header .wrap .nav ul li a:hover{color: #fff;background-color: #425a66;}
+
+.header .search_box {float: left; width: 270px;margin-top: 10px;margin-left: 8px;}
+
+.header .weibo {float: left; margin-top: 15px;}
+
+.footer .wrap{width: 980px; margin: 0 auto;}
+.footer .copy-footer{clear: both;background: #f6f6f6;margin-top: 20px;padding: 20px 0;color: #999;text-align: center;}
+.footer .copy-main .item{float: left; padding: 0 40px; border-left: 1px dotted #d2d2d2;color: #999;line-height: 22px;}
+.footer .copy-main .item a{color: #999;}
+.footer .copy-main .item dl dt{font-size: 14px;font-weight: bold;color: #666;}
+.clear { clear: both;}
+
+@media screen and (max-width: 1023px){
+    .container { max-width: 100%; width: 875px; margin: 0 auto;}
+}
+
+.allstar50,.allstar50,.allstar45,.allstar40,.allstar35,.allstar30,.allstar25,.allstar20,.allstar15,.allstar10,.allstar05 {
+    display: inline-block; *display: inline; zoom:1;width: 55px; height: 11px;
+    background: url('/resource/images/midstars.gif') no-repeat; margin: 0 3px 0 0;
+    overflow: hidden
+}
+.allstar50 {background-position: 0 0px}
+.allstar45 { background-position: 0 -11px}
+.allstar40 { background-position: 0 -22px}
+.allstar35 { background-position: 0 -33px}
+.allstar30 { background-position: 0 -44px}
+.allstar25 { background-position: 0 -55px}
+.allstar20 { background-position: 0 -66px}
+.allstar15 { background-position: 0 -77px}
+.allstar10 { background-position: 0 -88px}
+.allstar05 { background-position: 0 -99px}

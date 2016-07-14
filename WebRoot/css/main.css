@@ -14,11 +14,56 @@ a:hover {
 	color: #b00;
 	text-decoration:none;
 }
-header{
 
-    background: #80FFFF;
-	height:70px;
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand img{
+	width:20px;
 }
+
+header{
+    background: #80FFFF;
+	height:60px;
+}
+/*
+.form-group .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.form-group .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.form-group .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.form-group .dropup, .dropdown {
+    position: relative;
+}
+.form-group .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+*/
+
 header .account{
 	padding-right:200px;
 	text-align:right;
@@ -36,22 +81,19 @@ header .account>a{
 }
 header .account>a:hover{
 	
-	color:#eee;
+	color:white;
 
 	
 }
+
 header .logo{
     float:left;
 	line-height:60px;
 	font-size:28px;
-	color:pink;
+	color:white	;
 }
 
-main{
-	margin-top:10px;
-}
-
-
+/*
 main .search-box{
 	height:30px;
 }
@@ -59,6 +101,7 @@ main .search-box{
 main .input-group{
 	margin:20px 30px;
 }
+*/
 main ul{
 	width:1040px;
 	margin:0 auto;
@@ -75,18 +118,18 @@ main ul li .add{
     float:left;
 	margin:30px 20px 0px 20px;
 	padding:5px;
-	width:300px;
-	height:250px;
-	border:4px solid #80FFFF;
-	border-radius:800px;
+	width:200px;
+	height:200px;
+	border:4px solid silver;
+	border-radius:8px;
 	text-align:center;	
 }
 
 main ul li .add >a{
 
-	font-size:36px;
+	font-size:30px;
 	color:#80FFFF;
-	line-height:230px;
+	line-height:180px;
 }
 main ul li .add:hover{
 	border:4px solid gray;
@@ -94,9 +137,9 @@ main ul li .add:hover{
 main ul li img{
 	margin:30px 20px 0px 20px;
 	padding:5px;
-	width:300px;
-	height:250px;
-	border:4px solid #80FFFF;
+	width:200px;
+	height:200px;
+	border:4px solid sliver;
 	border-radius:8px;
 }
 main ul li img:hover{
@@ -216,7 +259,7 @@ main ul li p a.add-order:hover{
 .bg .login .btn-login{
 	width:280px;
 }
-/*修改美食信息页面*/
+/*修改信息页面*/
 /* 文件上传*/
 .btn-file{overflow:hidden;position:relative;vertical-align:middle;}
 .btn-file>input{position:absolute;top:0;right:0;margin:0;opacity:0;filter:alpha(opacity=0);transform:translate(-300px, 0) scale(4);font-size:23px;direction:ltr;cursor:pointer;}

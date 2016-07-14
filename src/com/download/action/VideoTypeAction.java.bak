@@ -6,35 +6,33 @@ import javax.annotation.Resource;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
+import com.download.dao.VideoTypeDao;
+=======
+
+import com.download.dao.CustomerDao;
+import com.download.dao.VideoDao;
 import com.download.dao.VideoTypeDao;
 import com.download.model.Customer;
+import com.download.model.Video;
+>>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
 import com.download.model.Videotype;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Controller @Scope("prototype")
 public class VideoTypeAction extends ActionSupport{
+<<<<<<< HEAD
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
+=======
+>>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
 	@Resource VideoTypeDao videoTypeDao;
 
-	private Videotype videotype;
-	
-	
-	
-	private List<Videotype> videotypeList;
-	
-	
-	public void setVideotypeList(List<Videotype> videotypeList) {
-		this.videotypeList = videotypeList;
-	}
-	
-	public List<Videotype> getVideotypeList() {
-		return videotypeList;
-	}
-	
+	private Videotype videoType;
 	
 	public String addvideoType() throws Exception{
 		videoTypeDao.addVideotype(videotype);
@@ -57,8 +55,21 @@ public class VideoTypeAction extends ActionSupport{
 		videoTypeDao.updateVideotype(videotype);
 		return "edit_message";
 	}
-
+	private Videotype videotype;
+	public Videotype getVideotype() {
+		return videotype;
+	}
+	public void setVideotype(Videotype videotype) {
+		this.videotype = videotype;
+	}
 	
+	private List<Videotype> videotypeList;
+	public List<Videotype> getVideotypeList() {
+		return videotypeList;
+	}
+	public void setVideotypeList(List<Videotype> videotypeList) {
+		this.videotypeList = videotypeList;
+	}
 	
 	 
 //	

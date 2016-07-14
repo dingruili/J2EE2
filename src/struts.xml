@@ -6,36 +6,22 @@
 <struts>
      <constant name="struts.i18n.encoding" value="utf-8"/>
      <constant name="struts.devMode" value="true" />
-<<<<<<< HEAD
+
      <constant name="struts.ui.theme" value="simple" />
      <!--Struts2中Action对象的创建交给spring完成-->
      <constant name="struts.objectFactory" value="spring" />  
 
-=======
-      <constant name="struts.ui.theme" value="simple" />
-     <!--Struts2中Action对象的创建交给spring完成-->
-     <constant name="struts.objectFactory" value="spring" />   
-     
->>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
      <package name="default" extends="struts-default">  <!-- 注意此包的写法 -->
          <!-- 配置一个拦截器 -->
 	     <interceptors>
 	        <!-- 拦截器对应的class是 com.download.util.LoginInterceptors-->   
 	        <interceptor name="LoginInterceptors" class="com.download.util.LoginInterceptors">
 	           <!-- excludeName 是例外的action，也就是下面这几个action不会被拦截--> 
-<<<<<<< HEAD
                <param name="excludeName">customer_login,customer_reg,video_showVideo</param>
 	           <!-- customer可以作为参数传递，取自session.put("customer", db_customer);中的这个customer-->
 	           <param name="sessionName">customer</param>
 	        </interceptor>    
             <!-- 定义拦截器 栈，用来放拦截器，其中LoginInterceptors是登录拦截器，也就是我们自定义的这个拦截器，
-=======
-	           <param name="excludeName">customer_login,customer_reg,video_showVideo</param>
-	           <!-- customer可以作为参数传递，取自session.put("customer", db_customer);中的这个customer-->
-	           <param name="sessionName">customer</param>
-	        </interceptor>    
-	        <!-- 定义拦截器 栈，用来放拦截器，其中LoginInterceptors是登录拦截器，也就是我们自定义的这个拦截器，
->>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
 	             defaultStack是struts默认拦截器，必须加上，否则struts自带的很多功能就没法用，比如传参--> 
 	        <interceptor-stack name="myInterceptors">
 	           <interceptor-ref name="defaultStack"></interceptor-ref>   
@@ -51,14 +37,9 @@
 	     </global-results>
      </package>
      
-<<<<<<< HEAD
      <!-- 注意 extends="default" ，与上一讲已经不同，"default"是拦截器的name，以下这几个package
                              要继承自"default"才可以使用拦截器，否则拦截器对他们不起作用，切记切记
      -->
-     
-     
-=======
->>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
      
      
 	 <package name="video" namespace="/video" extends="default">
@@ -93,9 +74,14 @@
 	 </package>
 	 <package name="download" namespace="/download" extends="default" >
         <action name="download_*" class="downloadAction" method="{1}">
-            <result name="download_message">/download_message.jsp</result>
+            <result name="download_message">/download.jsp</result>
             <result name="show_view">/download_main.jsp</result>
             <result name="detail_view">/download_detail.jsp</result>
+            <result type="stream">
+            	<param name="contentType">${mimeType}</param>  
+		        <param name="inputName">inStream</param>  
+		        <param name="contentDisposition">attachment;filename="${filename}"</param>
+            </result>
         </action>  
 	 </package>
 	 

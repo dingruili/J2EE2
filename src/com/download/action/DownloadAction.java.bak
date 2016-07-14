@@ -1,14 +1,9 @@
 package com.download.action;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.servlet.ServletContext;
 
-import org.apache.struts2.util.ServletContextAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import com.download.dao.CustomerDao;
@@ -20,66 +15,17 @@ import com.download.model.Video;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Controller @Scope("prototype")
-public class DownloadAction extends ActionSupport implements
-	 ServletContextAware {  
-		
-//	下载
-	private static final long serialVersionUID = 1L;  
-
-		 private ServletContext context;  
-
-		 private String filename;  
-
-		 private String mimeType;  
-
-		 private InputStream inStream;  
-
-		 @Override  
-		 public String execute() throws Exception {  
-		     mimeType = context.getMimeType(filename);  
-		     return SUCCESS;  
-		 }  
-
-		 public InputStream getInStream() {  
-		     inStream = context.getResourceAsStream("/doc/" + filename);  
-		     if (inStream == null) {  
-		         inStream = new ByteArrayInputStream("Sorry,File not found !"  
-		                 .getBytes());  
-		     }  
-		     return inStream;  
-		 }  
-
-		 public String getMimeType() {  
-		     return mimeType;  
-		 }  
-
-		 public void setFilename(String filename) {  
-		     try {  
-		         this.filename = new String(filename.getBytes("ISO8859-1"),"GBK");  
-		     } catch (UnsupportedEncodingException e) {  
-		     }  
-		 }  
-
-		 public String getFilename() {  
-		     try {  
-		         return new String(filename.getBytes(),"ISO8859-1");  
-		     } catch (UnsupportedEncodingException e) {  
-		         return this.filename;  
-		     }  
-		 }  
-
-		 public void setServletContext(ServletContext context) {  
-		     this.context = context;  
-		 }  
-
-
+public class DownloadAction extends ActionSupport{
 	
+<<<<<<< HEAD
 	 /**
 	 * 
 	 */
-//	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	/*业务层对象*/
+=======
 	 /*业务层对象*/
+>>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
     @Resource VideoDao videoDao;
     @Resource CustomerDao customerDao;
     @Resource DownloadDao downloadDao;
@@ -179,13 +125,5 @@ public class DownloadAction extends ActionSupport implements
         return "show_view";
     }
 
-    
-       
-    
-//    InputStream fileInputStream;
-//    String fileName;
-//    public String excute(){
-//    	File file = new File();
-//    }
-//    
+
 }

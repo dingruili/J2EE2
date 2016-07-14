@@ -25,7 +25,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+<<<<<<< HEAD
+  <p>下载号： <s:property value="download.downloadId"></s:property></p>
+=======
   <p>下载号：<s:property value="download.downloadId"></s:property></p>
+>>>>>>> cbb679cb2bc27312907bcfaff35770d65be21053
   <p>下载用户:<s:property value="download.customer.customerName"></s:property></p>
   <p>下载：<s:property value="download.video.videoName"></s:property></p>
   </body>
