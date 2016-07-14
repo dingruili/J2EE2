@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   <header>
-	    <div class="logo"><i class="fa fa-youtube-play"></i><a href="index.jsp">DownLoadVideo</a></div>
+	    <div class="logo"><i class="fa fa-youtube-play"></i><a href="index.jsp"> DownLoadVideo </a></div>
 <!-- 	    
 	    <nav>
 			<ul>
