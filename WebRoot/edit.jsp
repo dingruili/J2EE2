@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   <header>
-	    <div class="logo"><i class="fa fa-youtube-play"></i><a href="index.jsp">DownLoadV</a></div>
+	    <div class="logo"><i class="fa fa-youtube-play"></i><a href="index.jsp">DownLoadVideo</a></div>
 <!-- 	    
 	    <nav>
 			<ul>
@@ -143,12 +143,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                               <input type="text" name="video.introduction" value="<s:property value='video.introduction'/>" class="form-control input-sm" required>
                             </div>
 			           </div>
-			           <div class="form-group">
-			                <label class="control-label col-md-3">视频类型</label>
-			                <div class="col-md-4">
-                              <input type="text" name="video.videoType" value="<s:property value='video.videoType'/>" class="form-control input-sm" required>
-                           </div>
-			           </div>
+			     
 			           <div class="form-group">
 			                <label class="control-label col-md-3">导演</label>
 			                <div class="col-md-4">
